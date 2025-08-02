@@ -452,32 +452,85 @@ span.blue,.gradient{
 }
 .work img{
     width: 100%;
-    height:425px;
-    object-fit: cover;
     border-radius: 10px;
-    display:block;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease;
+    display: block;
 }
-.work img[src="images/ev.png"] {
-    width: 100%;
-    height: 425px;
+
+/* Desktop specific styles */
+.desktop-image {
+    height: 280px;
     object-fit: cover;
-    object-position: center top;
-    border-radius: 1px;
+    object-position: center;
 }
-.work img[src="images/movierec.png"] {
-    width: 100%;
-    height: 425px;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 1px;
+
+/* Mobile specific styles */
+.mobile-image {
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    background: #f8f9fa;
+    padding: 10px;
 }
-.work img[src="images/link.png"] {
-    width: 100%;
-    height: 425px;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 1px;
+
+/* Show desktop images on desktop, hide mobile images */
+@media (min-width: 769px) {
+    .mobile-image {
+        display: none;
+    }
+    
+    .desktop-image {
+        display: block;
+    }
+    
+    .work:hover .desktop-image {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+}
+
+/* Show mobile images on mobile, hide desktop images */
+@media (max-width: 768px) {
+    .desktop-image {
+        display: none;
+    }
+    
+    .mobile-image {
+        display: block;
+    }
+    
+    .work-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .work {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .desktop-image {
+        height: 240px;
+    }
+    
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1400px) {
+    .desktop-image {
+        height: 320px;
+    }
+    
+    .work-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 .layer{
     width: 100%;
@@ -906,64 +959,4 @@ form input, form textarea{
 
 .resume-actions {
     text-align: center;
-}
-
-#pwa-install-container {
-    text-align: right;
-    margin: 20px 0;
-    display: none;
-    position: relative;
-    width: 100%;
-}
-
-#pwa-install-btn {
-    background: linear-gradient(45deg, #007bff, #0056b3);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 14px;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    position: static;
-    float: right;
-    margin-right: 30px;
-}
-
-#pwa-install-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-}
-
-#pwa-install-btn:active {
-    transform: translateY(0);
-}
-
-/* Make sure footer layout accommodates the button */
-#footer {
-    position: relative;
-}
-
-#footer ul {
-    margin-bottom: 0;
-}
-
-/* Mobile responsive for PWA button */
-@media (max-width: 768px) {
-    #pwa-install-container {
-        text-align: center;
-        margin: 15px 0;
-    }
-    
-    #pwa-install-btn {
-        float: none;
-        margin-right: 0;
-        font-size: 12px;
-        padding: 10px 20px;
-    }
 }

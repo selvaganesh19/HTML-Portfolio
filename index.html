@@ -30,16 +30,15 @@
     <meta name="theme-color" content="#1a1a1a">
     
     <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Selvaganesh V">
+    <meta name="apple-mobile-web-app-title" content="Selvaganesh">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-    
 </head>
 <body>
 
@@ -452,6 +451,101 @@ function downloadResume(event) {
     document.body.removeChild(link);
 }
 </script>
-        
+<script>
+// PWA Service Worker Registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then((registration) => {
+                console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
+
+// PWA Install Prompt
+let deferredPrompt;
+
+// Create install button in footer
+const installContainer = document.createElement('div');
+installContainer.id = 'pwa-install-container';
+installContainer.style.cssText = `
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+`;
+
+const installBtn = document.createElement('button');
+installBtn.id = 'pwa-install-btn';
+installBtn.innerHTML = '📱 Install Portfolio App';
+installBtn.style.cssText = `
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+`;
+
+installContainer.appendChild(installBtn);
+
+// Add to footer
+const footer = document.getElementById('footer');
+if (footer) {
+    const footerUl = footer.querySelector('ul');
+    if (footerUl) {
+        footerUl.insertAdjacentElement('afterend', installContainer);
+    } else {
+        footer.appendChild(installContainer);
+    }
+}
+
+// Listen for beforeinstallprompt event
+window.addEventListener('beforeinstallprompt', (e) => {
+    console.log('beforeinstallprompt event fired');
+    e.preventDefault();
+    deferredPrompt = e;
+    
+    // Show the install button
+    installContainer.style.display = 'block';
+});
+
+// Handle install button click
+installBtn.addEventListener('click', async () => {
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        deferredPrompt = null;
+        installContainer.style.display = 'none';
+    }
+});
+
+// Hide install button if already installed
+window.addEventListener('appinstalled', () => {
+    installContainer.style.display = 'none';
+    console.log('PWA was installed');
+});
+
+// For debugging - check PWA criteria
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        console.log('Checking PWA install criteria...');
+        console.log('Service Worker supported:', 'serviceWorker' in navigator);
+        console.log('Manifest link exists:', !!document.querySelector('link[rel="manifest"]'));
+        console.log('HTTPS or localhost:', location.protocol === 'https:' || location.hostname === 'localhost');
+    }, 2000);
+});
+</script>
+
 </body>
 </html>

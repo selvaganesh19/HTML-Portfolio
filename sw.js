@@ -12,7 +12,7 @@ const urlsToCache = [
   '/images/link.png',
   '/images/movierec.png',
   '/images/2048.png',
-  '/logo.png',
+  //'/logo.png',
   '/profile-pic-1.png',
   '/scroll-down.gif',
   '/skill1.gif',
