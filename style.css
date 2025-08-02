@@ -458,20 +458,26 @@ span.blue,.gradient{
     display:block;
     transition: transform 0.5s;
 }
-/* Add this CSS for the movie recommendation project image */
+.work img[src="images/ev.png"] {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 1px;
+}
 .work img[src="images/movierec.png"] {
     width: 100%;
     height: 425px;
     object-fit: cover;
     object-position: center top;
-    border-radius: 8px;
+    border-radius: 1px;
 }
 .work img[src="images/link.png"] {
     width: 100%;
     height: 425px;
     object-fit: cover;
     object-position: center top;
-    border-radius: 8px;
+    border-radius: 1px;
 }
 .layer{
     width: 100%;
