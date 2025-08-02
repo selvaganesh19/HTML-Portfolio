@@ -907,3 +907,63 @@ form input, form textarea{
 .resume-actions {
     text-align: center;
 }
+
+#pwa-install-container {
+    text-align: right;
+    margin: 20px 0;
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+#pwa-install-btn {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: static;
+    float: right;
+    margin-right: 30px;
+}
+
+#pwa-install-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+#pwa-install-btn:active {
+    transform: translateY(0);
+}
+
+/* Make sure footer layout accommodates the button */
+#footer {
+    position: relative;
+}
+
+#footer ul {
+    margin-bottom: 0;
+}
+
+/* Mobile responsive for PWA button */
+@media (max-width: 768px) {
+    #pwa-install-container {
+        text-align: center;
+        margin: 15px 0;
+    }
+    
+    #pwa-install-btn {
+        float: none;
+        margin-right: 0;
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Selvaganesh - AI/ML Developer Portfolio",
+  "short_name": "Selvaganesh",
+  "description": "AI/ML Developer Portfolio showcasing projects in Machine Learning, Deep Learning, and AI automation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["portfolio", "developer", "ai", "ml"],
+  "icons": [
+    {
+      "src": "icons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
