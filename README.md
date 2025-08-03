@@ -11,13 +11,15 @@ Welcome to **HTML-Portfolio**! This project is a template for building modern, i
 🔗Link - **[Visit My Portfolio](https://selvaprofile19.vercel.app)**
 
 ---
+
 ## Demo Pictures
 
    ### 🏠 Homepage  
-      ![Homepage] <img width="1919" height="1017" alt="Screenshot 2025-08-03 193259" src="https://github.com/user-attachments/assets/c0ac7b9b-97fb-4be0-8fc6-92e2fe24a451" />
+      <img src="<img width="1919" height="1017" alt="Screenshot 2025-08-03 193259" src="https://github.com/user-attachments/assets/1f0a6246-a3f7-458a-9398-fe82fbb8cac1" />" alt="Homepage" width="800" />
+---
 
    ### 👨‍💻 About Section  
-      ![About Section] <img width="1919" height="1018" alt="Screenshot 2025-08-03 193308" src="https://github.com/user-attachments/assets/0a8609a0-0838-4c7f-8cc6-cb1c98f6f745" />
+      <img src="img width="1919" height="1018" alt="Screenshot 2025-08-03 193308" src="https://github.com/user-attachments/assets/0a8609a0-0838-4c7f-8cc6-cb1c98f6f745" />" alt="About" width="800" />
 
 ---
 
