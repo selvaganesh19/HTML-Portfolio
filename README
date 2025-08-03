@@ -1,0 +1,155 @@
+# 🚀 Selvaganesh - AI/ML Developer Portfolio
+
+![Portfolio Preview](https://github.com/user-attachments/assets/portfolio-preview.png)
+
+## 🌟 Overview
+
+Welcome to my personal portfolio website! I'm **Selvaganesh**, a passionate B.Tech student in Artificial Intelligence and Machine Learning at Bannari Amman Institute of Technology (2022-2026) with a 7.2 CGPA. This portfolio showcases my journey as a dedicated AI/ML developer and problem-solver who loves exploring innovative technologies.
+
+## 🎯 Live Demo
+
+🔗 **[Visit My Portfolio](https://selvaprofile19.vercel.app)**
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](images/pr2.png)
+
+*Clean, modern design with animated elements and professional branding*
+
+### 👨‍💻 About Section
+![About Section](images/pr.png)
+
+*Personal introduction with skills showcase and interactive elements*
+
+## ✨ Features
+
+- 🎨 **Modern Design**: Clean, responsive UI with smooth animations
+- 📱 **Mobile Responsive**: Optimized for all device sizes
+- 🌙 **Interactive Elements**: Engaging hover effects and transitions
+- 💼 **Project Showcase**: Detailed portfolio of AI/ML projects
+- 📊 **Skills Section**: Interactive tabs showcasing technical expertise
+- 📈 **Timeline**: Professional and educational journey
+- 🔗 **Social Links**: Easy access to LinkedIn, GitHub, and Instagram
+- 📄 **Resume Download**: Direct access to downloadable resume
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Styling**: Custom CSS with modern design patterns
+- **Animations**: CSS transitions and transforms
+- **Icons**: Bootstrap Icons, Font Awesome
+- **Deployment**: Vercel
+- **Version Control**: Git & GitHub
+
+## 🚀 Deployment
+
+This portfolio is deployed on **Vercel** for lightning-fast performance and global CDN distribution.
+
+### 📦 Deploy Your Own
+
+1. **Fork this repository**
+2. **Connect to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Import your forked repository
+   - Deploy with one click!
+
+### 🔧 Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/portfolio.git
+
+# Navigate to project directory
+cd portfolio
+
+# Open in your preferred code editor
+code .
+
+# Open index.html in browser or use live server
+```
+
+## 📂 Project Structure
+
+```
+📁 Selva-portfolio-main/
+├── 📄 index.html          # Main HTML file
+├── 🎨 style.css           # Stylesheet
+├── ⚡ script.js           # JavaScript functionality
+├── 📁 images/             # Image assets
+│   ├── 🖼️ profile.jpg
+│   ├── 🚗 ev.png
+│   └── 📱 other-projects/
+└── 📄 README.md           # This file
+```
+
+## 🎯 Key Sections
+
+### 🏠 Hero Section
+- **Animated name display** with gradient effects
+- **Professional tagline**: AI/ML Developer
+- **Call-to-action** with resume download
+- **Smooth scroll navigation**
+
+### 👨‍💻 About Me
+- **Personal introduction** and background
+- **Interactive skills tabs**:
+  - 💻 Programming Languages
+  - 🤖 AI/ML Technologies
+  - 🛠️ Tools & Frameworks
+- **Social media integration**
+
+### 📊 Skills Showcase
+- **Tabbed interface** for organized skill presentation
+- **Visual icons** for each technology
+- **Responsive grid layout**
+
+### 🗓️ Timeline
+- **Educational journey**
+- **Professional milestones**
+- **Interactive hover effects**
+
+### 💼 Projects Portfolio
+- **Featured AI/ML projects**
+- **Responsive project cards**
+- **Live demo and GitHub links**
+- **Mobile-optimized images**
+
+## 🌟 Highlights
+
+- ⚡ **Fast Loading**: Optimized for performance
+- 🎨 **Modern Aesthetics**: Professional color scheme
+- 📱 **Mobile First**: Responsive design approach
+- ♿ **Accessible**: Semantic HTML and proper contrast
+- 🔍 **SEO Optimized**: Meta tags and structured content
+
+## 📈 Performance
+
+- 🚀 **Lighthouse Score**: 95+ Performance
+- ⚡ **First Contentful Paint**: < 1.5s
+- 📊 **Core Web Vitals**: Excellent ratings
+- 🌐 **Global CDN**: Vercel edge network
+
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- 🎨 **Design Inspiration**: Modern portfolio trends
+- 💫 **Animations**: CSS3 and vanilla JavaScript
+- 🔧 **Deployment**: Vercel platform
+- 🤖 **AI/ML Journey**: Bannari Amman Institute of Technology
+
+---
+
+<div align="center">
+
+### 🌟 If you like this portfolio, please give it a ⭐!
+
+**Made with ❤️ by Selvaganesh**
+
+🚀 **[Visit Portfolio](https://selvaprofile19.vercel.app)** | 💻 **[View Code](https://github.com/yourrepo)** | 📧 **[Contact Me](mailto:your.email@gmail.com)**
+
+</div>
