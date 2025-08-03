@@ -15,11 +15,12 @@ Welcome to **HTML-Portfolio**! This project is a template for building modern, i
 ## Demo Pictures
 
    ### 🏠 Homepage  
-      <img src="<img width="1919" height="1017" alt="Screenshot 2025-08-03 193259" src="https://github.com/user-attachments/assets/1f0a6246-a3f7-458a-9398-fe82fbb8cac1" />" alt="Homepage" width="800" />
+     <img width="1919" height="1017" alt="Screenshot 2025-08-03 193259" src="https://github.com/user-attachments/assets/7bbb81e8-b0bc-4056-9f0b-434c6b905686" />
+
 ---
 
    ### 👨‍💻 About Section  
-      <img src="img width="1919" height="1018" alt="Screenshot 2025-08-03 193308" src="https://github.com/user-attachments/assets/0a8609a0-0838-4c7f-8cc6-cb1c98f6f745" />" alt="About" width="800" />
+      <img width="1919" height="1018" alt="Screenshot 2025-08-03 193308" src="https://github.com/user-attachments/assets/c79dab8e-39ed-44c5-ae3a-22366e294249" />
 
 ---
 
