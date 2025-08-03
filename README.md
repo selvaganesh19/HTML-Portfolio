@@ -1,5 +1,3 @@
-# HTML-Portfolio
-
 # HTML-Portfolio 🚀
 
 Welcome to **HTML-Portfolio**! This project is a template for building modern, interactive, and visually engaging portfolios using HTML, CSS, and JavaScript. It utilizes creative scripts and service workers to provide a dynamic and performant web presence.
