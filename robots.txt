@@ -1,0 +1,19 @@
+# Allow all search engine bots to crawl the website
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /*.pdf$
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Reference to sitemap
+Sitemap: https://selvaprofile19.vercel.app/sitemap.xml
