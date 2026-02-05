@@ -42,7 +42,7 @@ Welcome to **HTML-Portfolio**! This project is a template for building modern, i
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/HTML-Portfolio.git
+   git clone https://github.com/selvaganesh19/HTML-Portfolio.git
    cd HTML-Portfolio
    ```
 2. **Open in Your Browser**
