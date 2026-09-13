@@ -959,4 +959,13 @@ form input, form textarea{
 
 .resume-actions {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.support-btn {
+    text-decoration: none;
 }
