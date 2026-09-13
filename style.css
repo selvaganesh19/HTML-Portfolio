@@ -981,3 +981,31 @@ form input, form textarea{
     gap: 15px;
     flex-wrap: wrap;
 }
+
+.support-contact-box {
+    margin-top: 35px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-contact-box p {
+    font-size: 1.1rem;
+    color: #ababab;
+    margin-bottom: 15px;
+}
+
+.support-btn-contact {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 250px;
+    height: 3.6vw;
+    min-height: 48px;
+    padding: 0 20px;
+    text-decoration: none;
+}
