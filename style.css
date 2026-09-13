@@ -936,23 +936,39 @@ form input, form textarea{
     height: 1px;
 }
 
-.resume-btn {
+.resume-btn,
+.support-btn {
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    min-width: 220px;
+    height: 3.6vw;
+    min-height: 48px;
+    padding: 0 17px;
+    text-decoration: none;
 }
 
-.download-option {
+.download-option,
+.heart-option {
     background: rgba(255, 255, 255, 0.2);
     padding: 5px 8px;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-left: 10px;
+    margin-left: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.download-option:hover {
+.heart-option i {
+    color: #ff4757;
+}
+
+.download-option:hover,
+.heart-option:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
 }
@@ -964,8 +980,4 @@ form input, form textarea{
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-}
-
-.support-btn {
-    text-decoration: none;
 }
